@@ -21,5 +21,6 @@ public class App
         XmlBeanFactory xmlBeanFactory= new XmlBeanFactory(new ClassPathResource("beans.xml"));
         Movie movie1 = context.getBean("movie",Movie.class);
         System.out.println(movie1.getActor());
+        System.out.println(movie==movie1);
     }
 }

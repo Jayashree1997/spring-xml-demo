@@ -6,9 +6,28 @@
     <bean id="actor" class="com.stackroute.domain.Actor">
         <property name="name" value="mansi"></property>
         <property name="age"  value="50"></property>
-        <property name="gender" value="transgender"></property>
+        <property name="gender" value="female"></property>
     </bean>
-    <bean id="movie" class="com.stackroute.domain.Movie">
+    <bean id="actor1" class="com.stackroute.domain.Actor">
+        <property name="name" value="jayshree"></property>
+        <property name="age" value="22"></property>
+        <property name="gender" value="female">
+        </property>
+    </bean>
+    <bean id="actor2" class="com.stackroute.domain.Actor">
+        <property name="name" value="ankita"></property>
+        <property name="age" value="23"></property>
+        <property name="gender" value="female"></property>
+
+    </bean>
+    <bean id="actor3" class="com.stackroute.domain.Actor">
+        <property name="name" value="saraswathi"></property>
+        <property name="age" value="41"></property>
+        <property name="gender" value="female"></property>
+    </bean>
+
+    <bean id="movie" class="com.stackroute.domain.Movie" scope="prototype">
         <property name="actor" ref="actor"></property>
+        <constructor-arg name="actor" ref="actor"></constructor-arg>
     </bean>
     </beans>
