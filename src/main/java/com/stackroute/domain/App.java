@@ -22,5 +22,9 @@ public class App
         Movie movie1 = context.getBean("movie",Movie.class);
         System.out.println(movie1.getActor());
         System.out.println(movie==movie1);
+        Movie movieA = context.getBean("movieA",Movie.class);
+        System.out.println(movieA);
+        Movie movieB = context.getBean("movieB",Movie.class);
+        System.out.println(movieB);
     }
 }

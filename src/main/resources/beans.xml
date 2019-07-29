@@ -26,7 +26,7 @@
         <property name="gender" value="female"></property>
     </bean>
 
-    <bean id="movie" class="com.stackroute.domain.Movie" scope="prototype">
+    <bean name="MovieA,MovieB" class="com.stackroute.domain.Movie" scope="prototype">
         <property name="actor" ref="actor"></property>
         <constructor-arg name="actor" ref="actor"></constructor-arg>
     </bean>
