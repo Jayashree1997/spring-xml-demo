@@ -30,5 +30,6 @@
         <property name="actor" ref="actor"></property>
         <constructor-arg name="actor" ref="actor"></constructor-arg>
     </bean>
-    <bean id="beanlifecycledemo" class="com.stackroute.domain.BeanLifecycleDemo"></bean>
-    </beans>
+    <bean id="beanlifecycledemo" class="com.stackroute.domain.BeanLifecycleDemo" init-method="customInit" destroy-method="customDestroy"></bean>
+    <bean id="beanpostprocessor" class="org.springframework.beans.factory.config.BeanPostProcessor"></bean>
+</beans>
