@@ -26,7 +26,9 @@
         <property name="gender" value="female"></property>
     </bean>
 
-    <bean name="movie" class="com.stackroute.domain.Movie" scope="prototype" autowire="byName">
-        <constructor-arg name="movie1" value="byName"></constructor-arg>
+    <bean id="movie" class="com.stackroute.domain.Movie" scope="prototype">
+        <property name="actor" ref="actor"></property>
+        <constructor-arg name="actor" ref="actor"></constructor-arg>
     </bean>
+    <bean id="beanlifecycledemo" class="com.stackroute.domain.BeanLifecycleDemo"></bean>
     </beans>

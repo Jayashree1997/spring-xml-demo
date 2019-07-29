@@ -22,6 +22,8 @@ public class App
         Movie movie1 = context.getBean("movie",Movie.class);
         System.out.println(movie1.getActor());
         System.out.println(movie==movie1);
+        BeanLifecycleDemo beanlifecycledemo=context.getBean("beanlifecycledemo",BeanLifecycleDemo.class);
+        System.out.println(beanlifecycledemo);
 
     }
 }
